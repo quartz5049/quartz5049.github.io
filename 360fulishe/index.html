@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>360福利社-手机端积分兑换与试玩任务清单</title>
+<meta name="description" content="360福利社是360手机助手内的积分福利专区，汇总每日签到、试玩任务、应用礼包与积分兑换入口。本文整理11月可兑换商品、任务时长与到账规则，帮你在下单前看清积分门槛与到账时间。">
+<meta name="keywords" content="360福利社">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2313a05a'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E360%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "360福利社",
+  "alternateName": "360积分福利专区",
+  "inLanguage": "zh-CN",
+  "description": "360手机助手内的积分福利专区，提供签到、试玩任务、礼包与积分兑换信息。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "360福利社签到积分几点到账？",
+      "acceptedAnswer": {"@type": "Answer", "text": "签到积分通常在点击后10分钟内进入积分账户，11月6日调整后连续签到第7天奖励从30分提高到50分，若未到账可在积分明细里查看是否有待发放记录。"}
+    },
+    {
+      "@type": "Question",
+      "name": "试玩任务的积分什么时候结算？",
+      "acceptedAnswer": {"@type": "Answer", "text": "试玩任务分两步：下载安装后立即给基础分，保持应用在前台运行满规定时长后再发尾款。11月多数任务尾款在次日中午12点前结算，未完成的时长不计入。"}
+    },
+    {
+      "@type": "Question",
+      "name": "积分兑换的商品多久发货？",
+      "acceptedAnswer": {"@type": "Answer", "text": "话费与视频会员属于虚拟商品，兑换后48小时内到账；实物以仓库出库为准，11月6日起实物订单在兑换页可见预计出库日期，遇缺货会退回积分。"}
+    },
+    {
+      "@type": "Question",
+      "name": "同一台手机能登录几个账号做任务？",
+      "acceptedAnswer": {"@type": "Answer", "text": "任务规则要求一机一号，切换账号后任务记录不累计。多账号在同一设备刷任务可能被判无效，积分追回，11月已有账号因设备重复被限制领取。"}
+    },
+    {
+      "@type": "Question",
+      "name": "积分会过期吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "积分按自然年计算有效期，当年获得的积分在次年12月31日清零。11月是清理上一年度临期积分的高峰，积分明细页会标注每笔积分的到期日。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --brand:#13a05a;
+  --brand-dark:#0b7a43;
+  --brand-soft:#e7f6ee;
+  --accent:#f26a1b;
+  --accent-soft:#fff1e6;
+  --ink:#1d2421;
+  --ink-2:#48524d;
+  --ink-3:#6f7a74;
+  --line:#dfe6e2;
+  --line-soft:#eef2f0;
+  --bg:#f7faf8;
+  --card:#ffffff;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(20,50,35,.07);
+  --shadow-lg:0 10px 30px rgba(20,50,35,.10);
+  --f-head:1.55rem;
+  --f-body:.95rem;
+  --space:16px;
+  --sticky-offset:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  font-size:var(--f-body);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.35}
+h2{font-size:1.35rem}
+h3{font-size:1.05rem}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.3em}
+li{margin:4px 0}
+.wrap{width:min(1180px,100% - 32px);margin:0 auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶公告条 ===== */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(90deg,#0b7a43,#13a05a 60%,#1fb46c);
+  color:#fff;font-size:.84rem;
+}
+.announce .wrap{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 0;flex-wrap:wrap;
+}
+.announce-tag{
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;
+  padding:1px 9px;font-weight:700;white-space:nowrap;font-size:.78rem;
+}
+.announce-text{flex:1;min-width:180px}
+.announce a{color:#fff;font-weight:600;white-space:nowrap;border-bottom:1px dashed rgba(255,255,255,.6)}
+
+/* ===== 吸顶页头 ===== */
+.site-header{
+  position:sticky;top:38px;z-index:50;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(20,50,35,.02);
+}
+.nav-bar{align-items:center}
+.nav-bar{display:flex;gap:14px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:9px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-text{font-weight:800;font-size:1.12rem;letter-spacing:.5px;color:var(--brand-dark)}
+.brand-text small{display:block;font-size:.68rem;font-weight:500;color:var(--ink-3);letter-spacing:0}
+.main-nav{margin-left:6px}
+.main-nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.main-nav a{
+  display:block;padding:6px 11px;border-radius:999px;
+  color:var(--ink-2);font-size:.9rem;font-weight:500;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--brand-soft);color:var(--brand-dark);text-decoration:none}
+.main-nav a.active{background:var(--brand-soft);color:var(--brand-dark);font-weight:700}
+.header-tools{display:flex;align-items:center;gap:8px;margin-left:auto;flex:none}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:150px;padding:7px 10px;border:1px solid var(--line);
+  border-radius:999px;font-size:.85rem;background:#fff;color:var(--ink);
+}
+.search-box input:focus{border-color:var(--brand);outline:none;box-shadow:0 0 0 3px rgba(19,160,90,.16)}
+.search-box button{
+  margin-left:4px;border:0;background:var(--brand);color:#fff;
+  border-radius:999px;padding:7px 12px;font-size:.85rem;cursor:pointer;
+}
+.search-box button:hover{background:var(--brand-dark)}
+.search-feedback{
+  position:absolute;top:calc(100% + 6px);left:0;right:0;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  box-shadow:var(--shadow-lg);font-size:.82rem;padding:8px 10px;display:none;z-index:5;
+}
+.search-feedback.show{display:block}
+.btn-ghost{
+  border:1px solid var(--brand);color:var(--brand-dark);background:#fff;
+  border-radius:999px;padding:6px 14px;font-size:.85rem;font-weight:600;
+  white-space:nowrap;
+}
+.btn-ghost:hover{background:var(--brand-soft);text-decoration:none}
+.menu-toggle{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);
+  width:38px;height:34px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;
+}
+.menu-toggle span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 320px at 85% -60px,rgba(19,160,90,.16),transparent 70%),
+    radial-gradient(600px 300px at 0% 110%,rgba(242,106,27,.10),transparent 70%),
+    #fff;
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:36px;align-items:center;padding:48px 0 46px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--brand-soft);color:var(--brand-dark);
+  border:1px solid rgba(19,160,90,.25);
+  font-size:.8rem;font-weight:700;padding:3px 12px;border-radius:999px;
+  margin-bottom:14px;
+}
+.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--brand);display:inline-block}
+.hero h1{
+  font-size:clamp(1.9rem,4vw,2.7rem);
+  letter-spacing:1px;color:var(--ink);
+  margin-bottom:6px;
+}
+.hero-sub{
+  font-size:1rem;color:var(--ink-2);max-width:34em;margin-bottom:20px;
+}
+.hero-sub b{color:var(--brand-dark)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.btn-primary{
+  display:inline-block;background:var(--brand);color:#fff;font-weight:700;
+  padding:10px 22px;border-radius:999px;font-size:.95rem;
+  box-shadow:0 6px 16px rgba(19,160,90,.28);
+  transition:transform .15s ease,background .15s ease;
+}
+.btn-primary:hover{background:var(--brand-dark);text-decoration:none;transform:translateY(-2px)}
+.btn-secondary{
+  display:inline-block;background:#fff;color:var(--ink);border:1px solid var(--line);
+  padding:10px 20px;border-radius:999px;font-size:.95rem;font-weight:600;
+  transition:transform .15s ease,border-color .15s ease;
+}
+.btn-secondary:hover{border-color:var(--brand);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{min-width:96px}
+.hero-stats strong{display:block;font-size:1.3rem;color:var(--brand-dark);line-height:1.2}
+.hero-stats span{font-size:.8rem;color:var(--ink-3)}
+.hero-visual{position:relative;min-height:300px}
+.hero-visual svg{width:100%;height:auto;display:block}
+
+/* ===== 主体布局 ===== */
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 290px;
+  gap:30px;padding:34px 0 50px;align-items:start;
+}
+.side-rail{position:sticky;top:calc(var(--sticky-offset) + 12px)}
+.rail-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;box-shadow:var(--shadow);margin-bottom:16px;
+}
+.rail-card h3{font-size:.92rem;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line-soft)}
+.rail-nav ul{list-style:none;margin:0;padding:0}
+.rail-nav a{
+  display:block;font-size:.86rem;color:var(--ink-2);
+  padding:6px 9px;border-left:3px solid transparent;border-radius:0 6px 6px 0;
+}
+.rail-nav a:hover{background:var(--brand-soft);text-decoration:none;color:var(--brand-dark)}
+.rail-nav a.active{border-left-color:var(--brand);background:var(--brand-soft);color:var(--brand-dark);font-weight:700}
+.rail-list{list-style:none;margin:0;padding:0;font-size:.84rem}
+.rail-list li{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line-soft)}
+.rail-list li:last-child{border-bottom:0}
+.rail-list .num{color:var(--accent);font-weight:700;flex:none}
+.rail-note{font-size:.8rem;color:var(--ink-3);line-height:1.65}
+
+/* ===== 板块通用 ===== */
+.section{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;margin-bottom:22px;box-shadow:var(--shadow);
+}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.section-head h2{position:relative;padding-left:12px}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:4px;bottom:4px;width:4px;
+  background:var(--brand);border-radius:3px;
+}
+.section-sub{font-size:.82rem;color:var(--ink-3);margin:0}
+.more-link{font-size:.84rem;font-weight:600;color:var(--brand-dark);white-space:nowrap}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ov-card{
+  border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  padding:14px;background:linear-gradient(180deg,#fbfffd,#fff);
+}
+.ov-card h3{font-size:.95rem;margin-bottom:6px;color:var(--brand-dark)}
+.ov-card p{font-size:.85rem;color:var(--ink-2);margin:0}
+.ov-card .meta{display:block;margin-top:8px;font-size:.76rem;color:var(--ink-3)}
+
+/* 精选卡片网格 */
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick-card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  display:flex;flex-direction:column;background:#fff;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.pick-card img{width:100%;height:132px;object-fit:cover}
+.pick-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-body h3{font-size:.95rem}
+.pick-body p{font-size:.83rem;color:var(--ink-2);margin:0;flex:1}
+.pick-tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:.72rem;padding:2px 8px;border-radius:999px;
+  background:var(--brand-soft);color:var(--brand-dark);font-weight:600;
+}
+.tag.warn{background:var(--accent-soft);color:#b34a0c}
+
+/* 紧凑列表 */
+.list-block{list-style:none;margin:0;padding:0}
+.list-block li{
+  display:grid;grid-template-columns:74px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line-soft);
+}
+.list-block li:last-child{border-bottom:0}
+.list-block time{font-size:.8rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.list-block a{font-weight:600;font-size:.9rem;color:var(--ink)}
+.list-block a:hover{color:var(--brand-dark)}
+.list-block .desc{display:block;font-weight:400;font-size:.82rem;color:var(--ink-3);margin-top:2px}
+.list-block .pill{font-size:.72rem;background:#f1f4f2;color:var(--ink-2);border-radius:999px;padding:1px 8px;white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cat-item{
+  display:block;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 12px 11px;background:#fff;transition:border-color .15s ease,transform .15s ease;
+}
+.cat-item:hover{border-color:var(--brand);text-decoration:none;transform:translateY(-2px)}
+.cat-item strong{display:block;font-size:.9rem;color:var(--ink);margin-bottom:2px}
+.cat-item span{font-size:.76rem;color:var(--ink-3)}
+
+/* 深度解析 */
+.article{border-top:1px solid var(--line-soft);padding-top:6px}
+.article p{font-size:.93rem;color:var(--ink-2)}
+.article h3{margin:20px 0 8px;padding-left:10px;border-left:3px solid var(--accent)}
+.article .lead{font-size:.97rem;color:var(--ink);background:var(--brand-soft);border-radius:var(--radius-sm);padding:13px 15px;margin-bottom:18px}
+.compare-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:12px 0 16px}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare-table th{background:#f2f7f4;font-weight:700;color:var(--ink)}
+.compare-table td b{color:var(--brand-dark)}
+.pull-quote{
+  border-left:4px solid var(--brand);background:#f6fbf8;
+  padding:12px 16px;margin:16px 0;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:.92rem;color:var(--ink);
+}
+.pull-quote cite{display:block;margin-top:6px;font-size:.78rem;color:var(--ink-3);font-style:normal}
+
+/* 步骤 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps li{
+  counter-increment:step;position:relative;padding:0 0 16px 46px;
+  border-left:2px solid var(--line-soft);margin-left:16px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0}
+.steps li::before{
+  content:counter(step);position:absolute;left:-17px;top:0;
+  width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;
+}
+.steps h3{font-size:.95rem;margin-bottom:2px}
+.steps p{font-size:.85rem;color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0 14px;margin-bottom:10px;background:#fff;
+}
+.faq details[open]{border-color:rgba(19,160,90,.4);background:#fbfffd}
+.faq summary{
+  cursor:pointer;list-style:none;padding:12px 0;font-weight:600;font-size:.92rem;
+  display:flex;justify-content:space-between;gap:10px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--brand);font-weight:800;font-size:1.1rem;flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{font-size:.86rem;color:var(--ink-2);padding-bottom:12px;margin:0}
+
+/* 评论 */
+.comment-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.comment{
+  border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  padding:12px 14px;background:#fcfdfd;
+}
+.comment-head{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.avatar{
+  width:28px;height:28px;border-radius:50%;background:var(--brand-soft);
+  color:var(--brand-dark);font-weight:700;font-size:.78rem;
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.comment-head b{font-size:.85rem}
+.comment-head time{font-size:.75rem;color:var(--ink-3);margin-left:auto}
+.comment p{font-size:.85rem;color:var(--ink-2);margin:0}
+.comment.neutral{background:#f8f9f9;border-style:dashed}
+.comment .ref{color:var(--brand-dark);font-weight:600}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.news-item{border:1px solid var(--line-soft);border-radius:var(--radius-sm);padding:13px 14px}
+.news-item h3{font-size:.92rem;margin-bottom:5px}
+.news-item p{font-size:.82rem;color:var(--ink-2);margin:0}
+.news-item .meta{display:block;font-size:.74rem;color:var(--ink-3);margin-top:7px}
+
+/* 标签索引 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.tag-cloud a{
+  font-size:.83rem;background:#f2f7f4;border:1px solid var(--line-soft);
+  color:var(--ink-2);border-radius:999px;padding:4px 12px;
+}
+.tag-cloud a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 榜单 */
+.rank-list{list-style:none;margin:0;padding:0}
+.rank-list li{
+  display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:center;
+  padding:10px 0;border-bottom:1px dashed var(--line-soft);
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-no{
+  width:24px;height:24px;border-radius:7px;background:#eef2f0;color:var(--ink-2);
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem;
+}
+.rank-list li:nth-child(1) .rank-no{background:var(--brand);color:#fff}
+.rank-list li:nth-child(2) .rank-no{background:var(--accent);color:#fff}
+.rank-list li:nth-child(3) .rank-no{background:#f7c948;color:#5a4400}
+.rank-list b{font-size:.88rem;font-weight:700}
+.rank-list small{display:block;font-size:.77rem;color:var(--ink-3);font-weight:400}
+.rank-score{font-size:.8rem;color:var(--brand-dark);font-weight:700;white-space:nowrap}
+
+/* 微交互区 */
+.notice-panel{
+  border:1px solid rgba(242,106,27,.35);background:var(--accent-soft);
+  border-radius:var(--radius-sm);padding:14px 16px;
+}
+.notice-panel h3{font-size:.95rem;color:#8f3c08;margin-bottom:6px}
+.notice-panel p{font-size:.85rem;color:#7a4419;margin:0}
+.notice-panel ol{font-size:.85rem;color:#7a4419;margin:8px 0 0;padding-left:1.2em}
+
+/* 页尾 */
+.site-footer{background:#12261d;color:#c9d8d0;padding:38px 0 22px;margin-top:10px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px;margin-bottom:26px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer-brand svg{width:34px;height:34px}
+.footer-brand b{color:#fff;font-size:1.05rem;letter-spacing:.5px}
+.footer-grid p{font-size:.83rem;color:#9fb5aa;margin:0 0 8px}
+.footer-grid h4{color:#fff;font-size:.88rem;margin:0 0 10px}
+.footer-grid ul{list-style:none;margin:0;padding:0;font-size:.82rem}
+.footer-grid li{margin:5px 0}
+.footer-grid a{color:#c9d8d0}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:16px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:.78rem;color:#8fa79b;
+}
+.back-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  width:42px;height:42px;border-radius:50%;border:0;
+  background:var(--brand);color:#fff;font-size:1.05rem;cursor:pointer;
+  box-shadow:var(--shadow-lg);display:none;align-items:center;justify-content:center;
+}
+.back-top.show{display:flex}
+.back-top:hover{background:var(--brand-dark)}
+
+@media (max-width:960px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:22px}
+  .side-rail{position:static;order:2}
+  .main-col{order:1}
+  .hero-grid{grid-template-columns:1fr;gap:26px;padding:36px 0}
+  .hero-visual{min-height:0;max-width:460px}
+  .overview-grid,.pick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  :root{--sticky-offset:96px}
+  .announce .wrap{padding:7px 0}
+  .announce-text{font-size:.78rem}
+  .site-header{top:36px}
+  .nav-bar{flex-wrap:wrap;padding:8px 0;gap:8px}
+  .menu-toggle{display:flex}
+  .header-tools{margin-left:auto}
+  .main-nav{order:10;width:100%;display:none}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:0;border-top:1px solid var(--line-soft);padding-top:6px}
+  .main-nav a{padding:9px 10px;border-radius:var(--radius-sm)}
+  .search-box input{width:110px}
+  .section{padding:18px 15px}
+  .overview-grid,.pick-grid,.news-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .list-block li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .list-block .pill{justify-self:start}
+  .footer-grid{grid-template-columns:1fr}
+  .hero h1{font-size:1.75rem}
+  .hero-stats{gap:16px}
+  .hero-stats div{min-width:80px}
+  .back-top{right:12px;bottom:14px}
+  .compare-table{font-size:.78rem}
+  .compare-table th,.compare-table td{padding:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+  .pick-card:hover,.cat-item:hover,.btn-primary:hover,.btn-secondary:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站内公告">
+  <div class="wrap">
+    <span class="announce-tag">11月8日更新</span>
+    <span class="announce-text">连续签到第7天奖励调至50分；试玩任务的尾款统一到次日12点前结算。</span>
+    <a href="/#faq">看到账规则</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="/#top" aria-label="360福利社首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1fb46c"/>
+            <stop offset="1" stop-color="#0b7a43"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="29" fill="url(#lg1)"/>
+        <circle cx="32" cy="32" r="20" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5 4" opacity=".85"/>
+        <path d="M24 32l5.5 5.5L41 26" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="32" cy="32" r="29" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-text">360福利社<small>签到 · 试玩 · 兑换</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="展开或收起导航">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">积分概览</a></li>
+        <li><a href="/#picks">今日精选</a></li>
+        <li><a href="/#latest">任务更新</a></li>
+        <li><a href="/#channels">兑换分类</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">兑换步骤</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <label class="sr-only" for="siteSearch">站内搜索</label>
+        <input id="siteSearch" type="search" placeholder="搜兑换 / 试玩 / 话费" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+      <a class="btn-ghost" href="/#picks">今日可兑</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 主题首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-badge"><i></i>2026年11月任务池已刷新</span>
+        <h1>360福利社</h1>
+        <p class="hero-sub">把每天能领的积分、能做的试玩任务和能兑的东西摊开来看：这一周有 <b>18 个</b> 签到档、<b>6 类</b> 试玩任务、<b>24 件</b> 可兑换商品，其中话费和视频会员在 48 小时内到账。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#picks">看今日可兑换</a>
+          <a class="btn-secondary" href="/#guide">走一遍兑换流程</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1,260</strong><span>当前积分均价（每万积分）</span></div>
+          <div><strong>6</strong><span>在架试玩任务</span></div>
+          <div><strong>24</strong><span>可兑换商品</span></div>
+          <div><strong>48h</strong><span>虚拟商品到账上限</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 340" role="img">
+          <defs>
+            <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1fb46c"/><stop offset="1" stop-color="#0b7a43"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb27a"/><stop offset="1" stop-color="#f26a1b"/>
+            </linearGradient>
+          </defs>
+          <rect x="18" y="26" width="384" height="286" rx="22" fill="#ffffff" stroke="#dfe6e2"/>
+          <rect x="38" y="46" width="150" height="18" rx="9" fill="#e7f6ee"/>
+          <rect x="38" y="76" width="230" height="10" rx="5" fill="#eef2f0"/>
+          <rect x="38" y="94" width="170" height="10" rx="5" fill="#eef2f0"/>
+          <rect x="38" y="128" width="106" height="70" rx="12" fill="url(#hg)" opacity=".92"/>
+          <text x="91" y="172" font-size="22" fill="#ffffff" text-anchor="middle" font-family="sans-serif" font-weight="bold">+50</text>
+          <rect x="156" y="128" width="106" height="70" rx="12" fill="url(#hg2)" opacity=".9"/>
+          <text x="209" y="172" font-size="22" fill="#ffffff" text-anchor="middle" font-family="sans-serif" font-weight="bold">+20</text>
+          <rect x="274" y="128" width="106" height="70" rx="12" fill="#e7f6ee"/>
+          <text x="327" y="172" font-size="22" fill="#0b7a43" text-anchor="middle" font-family="sans-serif" font-weight="bold">签到</text>
+          <rect x="38" y="218" width="342" height="16" rx="8" fill="#eef2f0"/>
+          <rect x="38" y="218" width="228" height="16" rx="8" fill="url(#hg)"/>
+          <circle cx="266" cy="226" r="11" fill="#ffffff" stroke="#13a05a" stroke-width="4"/>
+          <rect x="38" y="252" width="200" height="10" rx="5" fill="#eef2f0"/>
+          <rect x="38" y="270" width="130" height="10" rx="5" fill="#eef2f0"/>
+          <circle cx="352" cy="70" r="16" fill="#fff1e6"/>
+          <path d="M352 62v12M346 68h12" stroke="#f26a1b" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview">
+        <div class="section-head">
+          <div>
+            <h2>积分从哪儿来，花到哪儿去</h2>
+            <p class="section-sub">按 11 月 8 日任务池统计，普通账号一周可稳定拿 480—620 分。</p>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <h3>每日签到</h3>
+            <p>首日 10 分，第 3 天起 15 分，第 7 天 50 分。断签后从首日重新计算。</p>
+            <span class="meta">11 月 6 日改档</span>
+          </div>
+          <div class="ov-card">
+            <h3>试玩任务</h3>
+            <p>下载安装给基础分，应用保持前台运行满时长发尾款，单任务合计 40—260 分。</p>
+            <span class="meta">尾款次日 12 点前</span>
+          </div>
+          <div class="ov-card">
+            <h3>应用礼包</h3>
+            <p>合作应用的新人券、会员试用卡，领取后 30 天内有效，与积分兑换不冲突。</p>
+            <span class="meta">当前 9 个礼包</span>
+          </div>
+          <div class="ov-card">
+            <h3>积分兑换</h3>
+            <p>话费、视频会员、流量包为主，实物需等到货。虚拟商品按 48 小时到账承诺执行。</p>
+            <span class="meta">24 件在架</span>
+          </div>
+          <div class="ov-card">
+            <h3>有效期</h3>
+            <p>积分按自然年结清，次年 12 月 31 日清零。11 月是上一年度积分的集中消耗期。</p>
+            <span class="meta">以明细页为准</span>
+          </div>
+          <div class="ov-card">
+            <h3>账户限制</h3>
+            <p>一机一号。同一设备切换账号后任务记录不累计，判定无效的积分会被追回。</p>
+            <span class="meta">11 月已收紧</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="section" id="picks">
+        <div class="section-head">
+          <div>
+            <h2>本周值得先兑的 6 件</h2>
+            <p class="section-sub">按积分单价、到账速度和库存余量排序，非官方榜单。</p>
+          </div>
+          <a class="more-link" href="/#channels">全部分类 →</a>
+        </div>
+        <div class="pick-grid">
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-phone/480/300" width="480" height="300" loading="lazy" alt="话费充值卡兑换页示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">虚拟商品</span><span class="tag warn">库存 312</span></div>
+              <h3>10 元话费直充</h3>
+              <p>1,150 分，兑换后 48 小时内到账，支持三网。11 月 7 日调到 1,150 分，比上月低 80 分。</p>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-vip/480/300" width="480" height="300" loading="lazy" alt="视频会员月卡兑换示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">虚拟商品</span><span class="tag">7 天有效</span></div>
+              <h3>视频会员月卡</h3>
+              <p>2,400 分，兑换后拿到激活码，需在 7 天内绑定手机号，过期作废。</p>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-data/480/300" width="480" height="300" loading="lazy" alt="流量包兑换示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">虚拟商品</span><span class="tag warn">限量 200</span></div>
+              <h3>1GB 通用流量包</h3>
+              <p>900 分，当月有效。11 月 8 日剩余 167 份，比话费更划算，但只对指定运营商生效。</p>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-cup/480/300" width="480" height="300" loading="lazy" alt="保温杯实物兑换示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">实物</span><span class="tag">需填地址</span></div>
+              <h3>350ml 保温杯</h3>
+              <p>3,800 分，预计 11 月 12 日出库。实物兑换页面会显示预计出库日期，缺货退回积分。</p>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-cable/480/300" width="480" height="300" loading="lazy" alt="数据线实物兑换示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">实物</span><span class="tag">包邮</span></div>
+              <h3>Type-C 编织数据线</h3>
+              <p>2,600 分，1 米长度。11 月 5 日上架，兑换量已过 400 件，页面余量按小时刷新。</p>
+            </div>
+          </article>
+          <article class="pick-card">
+            <img src="https://picsum.photos/seed/x360-coupon/480/300" width="480" height="300" loading="lazy" alt="外卖优惠券兑换示意">
+            <div class="pick-body">
+              <div class="pick-tags"><span class="tag">券码</span><span class="tag">30 天</span></div>
+              <h3>外卖 5 元无门槛券</h3>
+              <p>600 分，券码兑换至账户后 30 天内使用。每天 10 点上架，11 月 7 日 9 分钟售完。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="section" id="latest">
+        <div class="section-head">
+          <div>
+            <h2>本周任务与规则变更</h2>
+            <p class="section-sub">按发生时间倒序记录，只列已生效的条目。</p>
+          </div>
+        </div>
+        <ul class="list-block">
+          <li>
+            <time datetime="2026-11-08">11月8日</time>
+            <div><a href="/#faq">虚拟商品到账时间统一为 48 小时</a><span class="desc">话费、会员、流量包并入同一时效口径，超时可在订单页发起催办。</span></div>
+            <span class="pill">规则</span>
+          </li>
+          <li>
+            <time datetime="2026-11-07">11月7日</time>
+            <div><a href="/#picks">10 元话费直充下调至 1,150 分</a><span class="desc">同时把每日兑换上限从 3 次调到 2 次，单日多兑会被页面拒绝。</span></div>
+            <span class="pill">兑换</span>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <div><a href="/#guide">连续签到第 7 天奖励提高到 50 分</a><span class="desc">此前为 30 分。断签重置逻辑不变，仍然从首日 10 分重新开始。</span></div>
+            <span class="pill">签到</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11月5日</time>
+            <div><a href="/#picks">新增 Type-C 编织数据线与 2 个试玩任务</a><span class="desc">任务分别来自清理工具和记账应用，基础分 40 分，尾款 60 分。</span></div>
+            <span class="pill">上新</span>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11月4日</time>
+            <div><a href="/#deep">同设备多账号刷任务开始判无效</a><span class="desc">触发条件为 24 小时内同机型切换 3 个以上账号，已领取积分会被追回。</span></div>
+            <span class="pill">风控</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="channels">
+        <div class="section-head">
+          <div>
+            <h2>按兑换类型找入口</h2>
+            <p class="section-sub">名称即搜索词，点进去可直接筛到对应商品。</p>
+          </div>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#picks"><strong>话费直充</strong><span>三网 10/20/30 元面额</span></a>
+          <a class="cat-item" href="/#picks"><strong>视频会员</strong><span>月卡、季卡激活码</span></a>
+          <a class="cat-item" href="/#picks"><strong>流量包</strong><span>1GB 通用、定向包</span></a>
+          <a class="cat-item" href="/#picks"><strong>外卖优惠券</strong><span>5 元、8 元无门槛</span></a>
+          <a class="cat-item" href="/#picks"><strong>试玩任务</strong><span>按时长结算的应用试玩</span></a>
+          <a class="cat-item" href="/#picks"><strong>应用礼包</strong><span>新人券、会员试用</span></a>
+          <a class="cat-item" href="/#picks"><strong>实物兑换</strong><span>杯具、线材、桌面小件</span></a>
+          <a class="cat-item" href="/#rank"><strong>积分榜单</strong><span>按单价与到账速度排</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section article" id="deep">
+        <div class="section-head">
+          <div>
+            <h2>深度解析：积分单价才是决定兑什么的关键</h2>
+            <p class="section-sub">对比 11 月 1 日至 11 月 8 日的兑换记录与任务收益。</p>
+          </div>
+        </div>
+        <p class="lead">判断一件商品值不值得兑，不看它标价多少，而看你为 1 元人民币付出了多少积分。按 11 月 8 日的兑换比例，话费直充是 115 分换 1 元，视频会员月卡约 240 分换 1 元，流量包按市价折算接近 300 分换 1 元。差距主要来自供给量。</p>
+
+        <h3>把话说清楚：三种口径会得出不同结论</h3>
+        <p>先说事实。11 月 7 日 10 点，话费直充从 1,230 分降到 1,150 分，同期任务池的单任务基础分没有变化，仍是 40 分起。这意味着完成同样的任务量，能换到的话费比 10 月多约 6.9%。这一条可以在积分明细页逐笔核对，兑换记录会显示扣分时的单价。</p>
+        <p>再说回应。11 月 4 日有用户在任务评论里指出，流量包虽然标 900 分，但只能用于指定运营商，定向流量在实际使用中很难花完。运营方在兑换说明里补了一行小字：适用省份以页面提示为准。这属于规则补注，不构成价格调整。</p>
+        <p>最后是推测。视频会员月卡 2,400 分的定价，与外部渠道 15—20 元的月卡售价对不上。一种解释是权益来源不同，另一种解释是库存有限导致价格偏高。没有公开的采购成本，两种解释都无法证实。</p>
+
+        <table class="compare-table">
+          <caption class="sr-only">11月8日主要兑换商品的积分单价对比</caption>
+          <thead>
+            <tr><th>商品</th><th>所需积分</th><th>折算单价</th><th>到账时效</th><th>可核对来源</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10 元话费直充</td><td><b>1,150</b></td><td>115 分 / 元</td><td>48 小时内</td><td>11月7日兑换页</td></tr>
+            <tr><td>视频会员月卡</td><td><b>2,400</b></td><td>约 240 分 / 元</td><td>48 小时内</td><td>11月8日兑换页</td></tr>
+            <tr><td>1GB 通用流量包</td><td><b>900</b></td><td>约 300 分 / 元</td><td>48 小时内</td><td>11月8日余量页</td></tr>
+            <tr><td>外卖 5 元券</td><td><b>600</b></td><td>120 分 / 元</td><td>即时到账</td><td>11月7日券码页</td></tr>
+          </tbody>
+        </table>
+
+        <h3>一个具体的判断：话费仍然是第一顺位</h3>
+        <p>理由有三条，都可核对。第一，单价最低，115 分换 1 元，比第二名外卖券低 5 分。第二，到账时效明确写在页面，超时能发起催办。第三，兑换上限从 3 次降到 2 次后，每天最多兑 20 元，对高频用户来说仍然是封顶项。如果只看热门程度，视频会员更常被讨论，但按单价算它排第三。</p>
+        <div class="pull-quote">
+          把 1 万积分分别投进话费和会员，前者能换 86.9 元，后者只能换约 41.7 元。差出来的 45 元，够覆盖一个月的 1GB 流量包。
+          <cite>据 11 月 8 日兑换页单价计算，未计入兑换上限</cite>
+        </div>
+
+        <h3>规则前后有变化，别沿用旧经验</h3>
+        <p>10 月的签到第 7 天奖励是 30 分，11 月 6 日起是 50 分。按连续签到 30 天计算，10 月能拿 450 分，11 月按新规能拿 510 分，多出 60 分。这 60 分刚好够补上流量包缺口的 60 分。另一个变化是设备风控，从 11 月 4 日开始，24 小时内同机型切换 3 个以上账号会被判无效。此前这条只写在任务协议里，11 月 4 日起实际执行。</p>
+        <p>需要提醒的是，签到奖励提高不等于收益一定变多。试玩任务的时长门槛在 11 月没有下调，多数任务要求应用在前台停留 3—8 分钟。对只想每天花 2 分钟的用户，签到是唯一低门槛路径，一周 480—620 分的估算主要来自签到与少量任务。</p>
+      </section>
+
+      <!-- 6 体验指南 -->
+      <section class="section" id="guide">
+        <div class="section-head">
+          <div>
+            <h2>从签到到兑换的五个步骤</h2>
+            <p class="section-sub">以 10 元话费直充为例，走完一遍大约 6 分钟。</p>
+          </div>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>先确认积分明细</h3>
+            <p>在积分明细页看当前余额和临期积分。11 月是上一年度积分清零前的集中消耗期，优先花临期部分。</p>
+          </li>
+          <li>
+            <h3>当天签到</h3>
+            <p>签到入口每天 0 点刷新，连续第 7 天奖励 50 分。断签后重新从 10 分起算，没有补签通道。</p>
+          </li>
+          <li>
+            <h3>选一个时长合适的试玩</h3>
+            <p>试用任务按前台停留时长结算，3 分钟任务给 40 分基础分，8 分钟任务给 100 分尾款。别为了快而中途切后台。</p>
+          </li>
+          <li>
+            <h3>在兑换页核对单价与库存</h3>
+            <p>话费直充 1,150 分、每天上限 2 次。提交前会显示扣分后的余额，这一步能避免兑错。</p>
+          </li>
+          <li>
+            <h3>记下到账时限</h3>
+            <p>虚拟商品 48 小时内到账，超时可在订单页发起催办。实物订单显示预计出库日期，缺货自动退回积分。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section faq" id="faq">
+        <div class="section-head">
+          <div>
+            <h2>积分到账与兑换的常见问题</h2>
+            <p class="section-sub">答案对应 11 月 6 日至 8 日已生效的规则。</p>
+          </div>
+        </div>
+        <details open>
+          <summary>360福利社签到积分几点到账？</summary>
+          <p>签到积分通常在点击后 10 分钟内进入积分账户。11 月 6 日调整后连续签到第 7 天奖励从 30 分提高到 50 分。若未到账，先看积分明细是否有待发放记录，再对时间戳核对。</p>
+        </details>
+        <details>
+          <summary>试玩任务的积分什么时候结算？</summary>
+          <p>试玩任务分两步结算：下载安装后立刻给基础分，应用保持前台运行满规定时长后再发尾款。11 月多数任务的尾款在次日 12 点前结算，未完成的时长不计入。</p>
+        </details>
+        <details>
+          <summary>积分兑换的商品多久发货？</summary>
+          <p>话费与视频会员属于虚拟商品，兑换后 48 小时内到账。实物以仓库出库为准，11 月 6 日起实物订单在兑换页可见预计出库日期，遇缺货会退回积分。</p>
+        </details>
+        <details>
+          <summary>同一台手机能登录几个账号做任务？</summary>
+          <p>任务规则要求一机一号，切换账号后任务记录不累计。24 小时内同机型切换 3 个以上账号可能被判无效，积分追回，11 月已有账号因设备重复被限制领取。</p>
+        </details>
+        <details>
+          <summary>积分会过期吗？</summary>
+          <p>积分按自然年计算有效期，当年获得的积分在次年 12 月 31 日清零。11 月是上年临期积分集中消耗的时段，积分明细页会标注每笔积分的到期日。</p>
+        </details>
+      </section>
+
+      <!-- 8 用户评论 -->
+      <section class="section" id="comments">
+        <div class="section-head">
+          <div>
+            <h2>用户怎么说</h2>
+            <p class="section-sub">来自任务页与兑换页的公开评论摘录，保留原意。</p>
+          </div>
+        </div>
+        <ul class="comment-list">
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">周</span><b>周予安</b><time datetime="2026-11-08">11月8日</time></div>
+            <p>今天 <span class="ref">10 元话费直充</span> 1,150 分换的，提交后 26 小时到账，比页面上写的 48 小时快。扣分记录和兑换记录能对上。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">林</span><b>林一舟</b><time datetime="2026-11-07">11月7日</time></div>
+            <p><span class="ref">1GB 通用流量包</span> 写通用，点进去才看到指定运营商，我这号用不了。建议兑换页把小字提上来，别藏在折叠区。</p>
+          </li>
+          <li class="comment neutral">
+            <div class="comment-head"><span class="avatar">陈</span><b>陈默</b><time datetime="2026-11-07">11月7日</time></div>
+            <p>签到改 50 分以后，断签成本明显变高。我上周出差断了两天，重新从 10 分爬，算下来亏了 70 分左右。补签如果能开放一次会好很多。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">吴</span><b>吴桐</b><time datetime="2026-11-06">11月6日</time></div>
+            <p>试玩了那个清理工具，基础分 40 立刻到，尾款 60 第二天中午 11 点多到的，和说明一致。任务要求前台停留 5 分钟，我中途没切后台。</p>
+          </li>
+          <li class="comment neutral">
+            <div class="comment-head"><span class="avatar">何</span><b>何嘉</b><time datetime="2026-11-06">11月6日</time></div>
+            <p><span class="ref">视频会员月卡</span> 2,400 分，折算下来和外面直接买差不多，甚至贵一点。兑换前最好先比价，别只看商品图。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">赵</span><b>赵晓河</b><time datetime="2026-11-05">11月5日</time></div>
+            <p>实物那个数据线 2,600 分，下单后能看到预计出库 11 月 12 日，这点比之前强。之前兑杯子等了两周没有任何进度显示。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="section" id="news">
+        <div class="section-head">
+          <div>
+            <h2>相关资讯与规则变化</h2>
+            <p class="section-sub">每条只讲一层信息，不重复任务更新里的内容。</p>
+          </div>
+        </div>
+        <div class="news-grid">
+          <article class="news-item">
+            <h3>话费直充调价后的兑换节奏</h3>
+            <p>11 月 7 日调价后，上午 10 点档的兑换量比前一日多出约三成，下午余量回升。页面库存按小时刷新，错峰兑成功率更高。</p>
+            <span class="meta">来源：兑换页余量记录 · 11月7日</span>
+          </article>
+          <article class="news-item">
+            <h3>设备风控开始实际执行</h3>
+            <p>11 月 4 日起，同机型 24 小时切换 3 个以上账号会触发判定。已领取积分被追回的账号，在明细页能看到冲正记录。</p>
+            <span class="meta">来源：任务协议补充说明 · 11月4日</span>
+          </article>
+          <article class="news-item">
+            <h3>外卖券上架时间固定</h3>
+            <p>5 元无门槛券改为每天 10 点上架，600 分一张。11 月 7 日开兑后 9 分钟售完，比 10 月的平均 14 分钟更快。</p>
+            <span class="meta">来源：券码页记录 · 11月7日</span>
+          </article>
+          <article class="news-item">
+            <h3>临期积分集中消耗</h3>
+            <p>上一年度积分将在次年 12 月 31 日清零，11 月进入集中消耗期。明细页对 30 天内到期的积分标红，可优先兑话费。</p>
+            <span class="meta">来源：积分明细规则页 · 11月8日</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="related">
+        <div class="section-head">
+          <div>
+            <h2>相关推荐</h2>
+            <p class="section-sub">按搜索频率整理的长尾词入口。</p>
+          </div>
+        </div>
+        <div class="tag-cloud">
+          <a href="/#picks">360福利社话费直充</a>
+          <a href="/#picks">积分兑换视频会员月卡</a>
+          <a href="/#guide">签到连续7天奖励</a>
+          <a href="/#latest">试玩任务尾款结算时间</a>
+          <a href="/#faq">积分兑换多久到账</a>
+          <a href="/#deep">积分单价怎么算</a>
+          <a href="/#latest">一机一号任务限制</a>
+          <a href="/#picks">外卖5元无门槛券</a>
+          <a href="/#faq">积分有效期规则</a>
+          <a href="/#guide">实物兑换出库日期</a>
+        </div>
+      </section>
+
+      <!-- 11 榜单 -->
+      <section class="section" id="rank">
+        <div class="section-head">
+          <div>
+            <h2>兑换性价比榜（11月8日）</h2>
+            <p class="section-sub">按每元所需积分从低到高排，只列仍有余量的商品。</p>
+          </div>
+        </div>
+        <ol class="rank-list">
+          <li>
+            <span class="rank-no">1</span>
+            <div><b>10 元话费直充</b><small>1,150 分 · 48 小时内到账 · 余量充足</small></div>
+            <span class="rank-score">115 分/元</span>
+          </li>
+          <li>
+            <span class="rank-no">2</span>
+            <div><b>外卖 5 元无门槛券</b><small>600 分 · 即时到账 · 每日限时上架</small></div>
+            <span class="rank-score">120 分/元</span>
+          </li>
+          <li>
+            <span class="rank-no">3</span>
+            <div><b>视频会员月卡</b><small>2,400 分 · 48 小时内到账 · 激活码 7 天有效</small></div>
+            <span class="rank-score">约 240 分/元</span>
+          </li>
+          <li>
+            <span class="rank-no">4</span>
+            <div><b>1GB 通用流量包</b><small>900 分 · 当月有效 · 仅限指定运营商</small></div>
+            <span class="rank-score">约 300 分/元</span>
+          </li>
+          <li>
+            <span class="rank-no">5</span>
+            <div><b>Type-C 编织数据线</b><small>2,600 分 · 预计 11 月 12 日出库 · 包邮</small></div>
+            <span class="rank-score">按市价约 260 分/元</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 互动区 -->
+      <section class="section" id="interact">
+        <div class="section-head">
+          <div>
+            <h2>本周互动：你打算先兑哪一件</h2>
+            <p class="section-sub">投票结果每 24 小时更新一次，用于观察库存压力。</p>
+          </div>
+        </div>
+        <div class="notice-panel">
+          <h3>本周投票 · 11月5日至11月11日</h3>
+          <p>当前参与人数 1,284。选项按上周兑换量排序，可重复投一次。</p>
+          <ol>
+            <li>10 元话费直充 —— 612 票</li>
+            <li>外卖 5 元无门槛券 —— 348 票</li>
+            <li>视频会员月卡 —— 187 票</li>
+            <li>1GB 通用流量包 —— 137 票</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 补充板块：可信度分层 -->
+      <section class="section" id="trust">
+        <div class="section-head">
+          <div>
+            <h2>信息可信度分层</h2>
+            <p class="section-sub">同一件事的不同说法，按可核验程度分开列。</p>
+          </div>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <h3>已核实</h3>
+            <p>话费单价 1,150 分、签到第 7 天 50 分、虚拟商品 48 小时到账，三项均可在对应页面直接查到。</p>
+            <span class="meta">11月7日至8日页面</span>
+          </div>
+          <div class="ov-card">
+            <h3>官方回应</h3>
+            <p>流量包适用运营商以页面提示为准，属于规则补注，暂未看到面向全部用户的进一步说明。</p>
+            <span class="meta">11月4日兑换说明</span>
+          </div>
+          <div class="ov-card">
+            <h3>用户转述</h3>
+            <p>有评论称尾款在 26 小时内到账，也有人说次日中午前到，两种说法都与 12 点前结算的口径不冲突。</p>
+            <span class="meta">评论摘录，未逐笔核对</span>
+          </div>
+          <div class="ov-card">
+            <h3>待验证推测</h3>
+            <p>会员月卡定价偏高可能与权益来源有关，但无公开采购信息，无法确认。</p>
+            <span class="meta">推测，不作依据</span>
+          </div>
+          <div class="ov-card">
+            <h3>口径差异</h3>
+            <p>签到奖励按“连续天数”计算，而非自然月累计。断签一次，当月拿到的总分与不中断相比差 70 分左右。</p>
+            <span class="meta">规则页与实测对照</span>
+          </div>
+          <div class="ov-card">
+            <h3>可复核项</h3>
+            <p>每笔积分的发放时间、单价、兑换记录都能在明细页逐条比对，出现差额时可据此发起申诉。</p>
+            <span class="meta">明细页字段</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-rail" aria-label="侧栏导航与辅助信息">
+      <div class="rail-card">
+        <h3>栏目导航</h3>
+        <nav class="rail-nav" aria-label="页内导航">
+          <ul>
+            <li><a href="/#overview" data-section="overview">积分概览</a></li>
+            <li><a href="/#picks" data-section="picks">今日精选</a></li>
+            <li><a href="/#latest" data-section="latest">任务更新</a></li>
+            <li><a href="/#channels" data-section="channels">兑换分类</a></li>
+            <li><a href="/#deep" data-section="deep">深度解析</a></li>
+            <li><a href="/#guide" data-section="guide">兑换步骤</a></li>
+            <li><a href="/#faq" data-section="faq">常见问题</a></li>
+            <li><a href="/#rank" data-section="rank">性价比榜</a></li>
+            <li><a href="/#comments" data-section="comments">用户评论</a></li>
+            <li><a href="/#trust" data-section="trust">可信度分层</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="rail-card">
+        <h3>余量快照（11月8日）</h3>
+        <ul class="rail-list">
+          <li><span>10 元话费直充</span><span class="num">312</span></li>
+          <li><span>外卖 5 元券</span><span class="num">售完</span></li>
+          <li><span>1GB 流量包</span><span class="num">167</span></li>
+          <li><span>视频会员月卡</span><span class="num">88</span></li>
+          <li><span>Type-C 数据线</span><span class="num">214</span></li>
+        </ul>
+      </div>
+      <div class="rail-card">
+        <h3>说明</h3>
+        <p class="rail-note">站内条目为示例整理，用于展示兑换流程与规则变化。积分单价、签到奖励、到账时效以实际任务页和兑换页显示为准，兑换前请核对扣除积分后的余额。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <circle cx="32" cy="32" r="29" fill="#1fb46c"/>
+            <path d="M24 32l5.5 5.5L41 26" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <b>360福利社</b>
+        </div>
+        <p>把签到、试玩与兑换的规则拆开写清楚，按余额和到账时效做选择。</p>
+        <p>页面更新：2026-11-08，对应正文中的到账时效、签到奖励与兑换单价条目。</p>
+      </div>
+      <div>
+        <h4>兑换入口</h4>
+        <ul>
+          <li><a href="/#picks">话费直充</a></li>
+          <li><a href="/#picks">视频会员</a></li>
+          <li><a href="/#picks">流量包</a></li>
+          <li><a href="/#picks">实物兑换</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>任务与规则</h4>
+        <ul>
+          <li><a href="/#latest">任务更新</a></li>
+          <li><a href="/#guide">兑换步骤</a></li>
+          <li><a href="/#faq">到账时效</a></li>
+          <li><a href="/#trust">可信度分层</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#interact">本周投票</a></li>
+          <li><a href="/#rank">性价比榜</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>示例数据说明：本页积分价格、库存与评论为演示内容，不构成兑换承诺。</span>
+      <span>© 2026 360福利社 · 内容仅供兑换流程参考</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var toggle = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.closest('a') && window.innerWidth <= 720){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('backTop');
+  function onScroll(){
+    if(!backTop) return;
+    if(window.scrollY > 420){ backTop.classList.add('show'); }
+    else{ backTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 侧栏高亮 */
+  var railLinks = Array.prototype.slice.call(document.querySelectorAll('.rail-nav a[data-section]'));
+  var sections = railLinks.map(function(a){
+    return document.getElementById(a.getAttribute('data-section'));
+  }).filter(Boolean);
+
+  function highlight(){
+    var pos = window.scrollY + 150;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    railLinks.forEach(function(a){
+      if(a.getAttribute('data-section') === current){ a.classList.add('active'); }
+      else{ a.classList.remove('active'); }
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+
+  var searchIndex = [];
+  document.querySelectorAll('main h2, main h3, main .list-block a, main .cat-item strong, main .tag-cloud a, main .rank-list b').forEach(function(el){
+    var text = (el.textContent || '').replace(/\s+/g,' ').trim();
+    if(!text) return;
+    var target = el.closest('section');
+    searchIndex.push({
+      text: text,
+      id: target ? target.id : ''
+    });
+  });
+
+  function doSearch(){
+    if(!input || !feedback) return;
+    var q = input.value.replace(/\s+/g,'').toLowerCase();
+    if(!q){
+      feedback.textContent = '请输入兑换商品、任务名称或规则关键词。';
+      feedback.classList.add('show');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.text.toLowerCase().indexOf(q) !== -1;
+    }).slice(0,6);
+    if(hits.length === 0){
+      feedback.textContent = '没有找到与“' + input.value.trim() + '”相关的条目，试试“话费”“签到”或“尾款”。';
+      feedback.classList.add('show');
+      return;
+    }
+    feedback.innerHTML = '';
+    hits.forEach(function(hit, i){
+      var a = document.createElement('a');
+      a.href = hit.id ? ('/#'+hit.id) : '/#top';
+      a.textContent = hit.text;
+      a.style.display = 'block';
+      a.style.padding = '3px 0';
+      feedback.appendChild(a);
+    });
+    feedback.classList.add('show');
+  }
+
+  if(btn){ btn.addEventListener('click', doSearch); }
+  if(input){
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    document.addEventListener('click', function(e){
+      if(feedback && !e.target.closest('.search-box')){ feedback.classList.remove('show'); }
+    });
+  }
+})();
+</script>
+</body>
+                                      </html>
